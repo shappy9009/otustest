@@ -12,5 +12,11 @@ export default [
     ...pluginJs.configs.recommended,
     ...jest.configs["flat/recommended"],
     ...eslintRecommended,
+    rules: {
+      "prefer-const": "warn",
+      "no-unused-vars": "warn",
+      "no-console": "error",
+      "semi": "error",
+    },
   },
 ];
